@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg02" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#3a2118"/>
+      <stop offset="1" stop-color="02"/>
+    </linearGradient>
+    <radialGradient id="glow02" cx="68%" cy="28%" r="78%">
+      <stop offset="0" stop-color="#f2c79b" stop-opacity="0.9"/>
+      <stop offset="0.45" stop-color="#f2c79b" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#f2c79b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig02" cx="50%" cy="45%" r="80%">
+      <stop offset="0.5" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.6"/>
+    </radialGradient>
+    <filter id="soft02"><feGaussianBlur stdDeviation="26"/></filter>
+    <filter id="grain02">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.16"/></feComponentTransfer>
+    </filter>
+    <linearGradient id="fig02" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a0f0b" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#1a0f0b" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg02)"/>
+  <ellipse cx="820" cy="420" rx="580" ry="540" fill="url(#glow02)"/>
+  <g filter="url(#soft02)" opacity="0.4">
+    <rect x="-60" y="1130" width="1320" height="400" fill="#1a0f0b" opacity="0.5"/>
+  </g>
+
+  <g opacity="0.95">
+    <ellipse cx="600" cy="560" rx="98" ry="116" fill="url(#fig02)"/>
+    <path d="M600 664 C 722 694 764 806 776 1020 L 424 1020 C 436 806 478 694 600 664 Z" fill="url(#fig02)"/>
+  </g>
+
+  <rect width="1200" height="1500" fill="url(#vig02)"/>
+  <rect width="1200" height="1500" filter="url(#grain02)" opacity="0.55"/>
+</svg>

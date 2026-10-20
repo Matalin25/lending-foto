@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Частная фотосъёмка — Имя Фотограф в городе Ваш город</title>
+<meta name="description" content="Частная съёмка для тех, кто ценит настоящие эмоции. Полная организация под ключ, помощь с образом и мудбордом, первые кадры через 48 часов.">
+<meta name="theme-color" content="#17130f">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ваша история заслуживает больше, чем просто удачный кадр">
+<meta property="og:description" content="Частная съёмка, на которой вы наконец расслабитесь. Первые кадры — через 48 часов.">
+<meta property="og:image" content="assets/img/photo-02.svg">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+<!-- Шрифты: Cormorant Garamond (заголовки) + Manrope (текст).
+     Если не хотите внешние подключения — удалите эту строку,
+     в стилях уже есть запасная системная пара. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Разметка для поиска: фотограф + агрегированный рейтинг -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Имя Фотограф",
+  "jobTitle": "Частный фотограф",
+  "description": "Частные фотосъёмки с полной организацией под ключ.",
+  "url": "https://example.com/",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "3",
+    "bestRating": "5"
+  }
+}
+</script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#hero">Перейти к содержанию</a>
+
+<!-- ============================== ШАПКА ============================== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+
+    <a class="logo" href="#hero">
+      <span class="logo__mark" aria-hidden="true"></span>
+      <span class="logo__text">
+        <span data-cfg="name">Имя Фотограф</span>
+        <em data-cfg="role">Частный фотограф</em>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#pains">Боли</a>
+      <a href="#solutions">Как это будет</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#about">Обо мне</a>
+      <a href="#prices">Цены</a>
+      <a href="#reviews">Отзывы</a>
+      <a class="nav__cta" href="#contacts" data-modal="call" data-cfg-cta>Забронировать созвон</a>
+    </nav>
+
+    <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</header>
+
+<main>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" id="hero">
+  <div class="container hero__inner">
+
+    <div class="hero__text">
+      <p class="eyebrow reveal">Частная фотосъёмка</p>
+
+      <h1 class="hero__title reveal" data-delay="1">
+        Ваша история заслуживает больше,
+        <em>чем просто удачный кадр.</em>
+      </h1>
+
+      <p class="hero__sub reveal" data-delay="2">
+        Частная съёмка для тех, кто ценит настоящие эмоции, а не пластиковую улыбку.
+        Создаю пространство, где вы можете быть собой.
+      </p>
+
+      <div class="hero__actions reveal" data-delay="3">
+        <a class="btn btn--primary" href="#contacts" data-modal="call" data-cfg-cta>
+          <span>Забронировать созвон на 15 минут</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__arrow"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="#gallery">Посмотреть кадры</a>
+      </div>
+
+      <p class="hero__micro reveal" data-delay="4">
+        Никакого спама. Письмо со ссылкой придёт в течение 2 минут. Отписка в один клик.
+      </p>
+
+      <ul class="facts reveal" data-delay="5">
+        <li><b>48 ч</b><span>до первых кадров в цветокоррекции</span></li>
+        <li><b>7 дней</b><span>до полной серии</span></li>
+        <li><b>50–70</b><span>кадров в финальной подборке</span></li>
+      </ul>
+    </div>
+
+    <div class="hero__visual reveal" data-delay="3">
+      <figure class="hero__frame">
+        <img src="assets/img/photo-02.svg" alt="Пример кадра с частной фотосъёмки" width="1200" height="1500" fetchpriority="high" decoding="async">
+        <figcaption class="hero__badge">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          Осталось 2 окна на <span data-cfg-month>этот месяц</span>
+        </figcaption>
+      </figure>
+      <span class="hero__line hero__line--1" aria-hidden="true"></span>
+      <span class="hero__line hero__line--2" aria-hidden="true"></span>
+    </div>
+
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ============================== БОЛИ ============================== -->
+<section class="section section--pains" id="pains">
+  <div class="container">
+
+    <header class="section__head reveal">
+      <p class="eyebrow eyebrow--muted">Знакомо?</p>
+      <h2 class="section__title">Три вещи, из-за которых<br>съёмка откладывается годами</h2>
+    </header>
+
+    <div class="pains">
+
+      <article class="pain reveal" data-delay="1">
+        <span class="pain__num" aria-hidden="true">01</span>
+        <h3 class="pain__quote">«Я не умею позировать, на всех фото я деревянный»</h3>
+        <p>
+          Вы смотрите на свои снимки и видите напряжение в плечах, неестественную улыбку
+          и мысль в глазах: «Когда это уже закончится?». Вы тратите деньги, а получаете
+          альбом с собственным стеснением.
+        </p>
+      </article>
+
+      <article class="pain reveal" data-delay="2">
+        <span class="pain__num" aria-hidden="true">02</span>
+        <h3 class="pain__quote">«Фотограф — это всегда стресс: локация, образ, время, а потом ждать месяц»</h3>
+        <p>
+          Голова пухнет от организации. Вы не понимаете, какой зал выбрать, пойдёт ли вам
+          этот бежевый свитер, и боитесь, что отдадите деньги за кота в мешке, а фото
+          получите через полгода, когда они уже потеряют актуальность.
+        </p>
+      </article>
+
+      <article class="pain reveal" data-delay="3">
+        <span class="pain__num" aria-hidden="true">03</span>
+        <h3 class="pain__quote">«У всех одинаковые фото из одних и тех же студий»</h3>
+        <p>
+          Вы листаете ленту и видите клоны: одинаковый свет, одинаковые позы, одинаковый
+          интерьер. Вы хотите сохранить момент, но не хотите, чтобы ваши воспоминания
+          выглядели как шаблон из фотобанка.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="bridge reveal">
+      <span class="bridge__line" aria-hidden="true"></span>
+      <p>Хорошая съёмка решает все три разом. Вот как.</p>
+      <span class="bridge__line" aria-hidden="true"></span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================== РЕШЕНИЯ ============================== -->
+<section class="section section--solutions" id="solutions">
+  <div class="container">
+
+    <header class="section__head section__head--light reveal">
+      <p class="eyebrow">Как это будет</p>
+      <h2 class="section__title">Как проходит съёмка</h2>
+    </header>
+
+    <div class="solutions">
+
+      <article class="solution reveal" data-delay="1">
+        <h3 class="solution__title">Вы не позируете — вы живёте</h3>
+        <p>
+          Я ловлю микро-эмоции: как вы смеётесь, поправляете волосы, смотрите на близкого
+          человека. Никакого «встаньте в третью балетную, голову на 15 градусов влево».
+          Вы забудете о камере через 10 минут.
+        </p>
+      </article>
+
+      <article class="solution reveal" data-delay="2">
+        <h3 class="solution__title">Полная организация под ключ</h3>
+        <p>
+          Я сам подбираю локации под ваш характер, помогаю с референсами по одежде,
+          составляю мудборд. Вы просто приходите. Первые кадры в цветокоррекции вы получаете
+          в течение 48 часов, полную серию — через 7 дней.
+        </p>
+      </article>
+
+      <article class="solution reveal" data-delay="3">
+        <h3 class="solution__title">Авторский взгляд, а не шаблон</h3>
+        <p>
+          Я не снимаю конвейером. Свет, ракурсы и композиция строятся под вас. Ваши фотографии
+          будут выделяться, потому что в них будет считываться именно ваша личность.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ГАЛЕРЕЯ ============================== -->
+<section class="section section--gallery" id="gallery">
+  <div class="container">
+
+    <header class="section__head reveal">
+      <p class="eyebrow eyebrow--muted">Галерея</p>
+      <h2 class="section__title">Не просто свет и цвет. Состояние.</h2>
+      <p class="section__lead">
+        Каждая серия здесь — это отдельный фильм. Листайте, чтобы почувствовать атмосферу.
+        Наведите на фото (на десктопе) или задержите палец (на мобильном), чтобы увидеть,
+        как выглядит кадр до и после работы с цветом.
+      </p>
+    </header>
+
+    <!-- Фотографии добавляются из js/config.js: массив SITE.photos -->
+    <div class="gallery" id="gallery-grid" data-loaded="false">
+      <noscript>
+        <p class="noscript">Галерея загружается с помощью JavaScript. Включите его, чтобы увидеть кадры,
+        или напишите мне напрямую — пришлю примеры работ в мессенджере.</p>
+      </noscript>
+    </div>
+
+    <p class="gallery__hint reveal">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="gallery__hint-icon"><path d="M12 3v18M7 8l5-5 5 5M7 16l5 5 5-5"/></svg>
+      Нажмите на фото, чтобы увидеть кадр до и после цветокоррекции
+    </p>
+
+  </div>
+</section>
+
+<!-- ============================== ОБО МНЕ ============================== -->
+<section class="section section--about" id="about">
+  <div class="container about__inner">
+
+    <div class="about__photo reveal">
+      <img src="assets/img/photo-05.svg" alt="Имя Фотограф — фотограф" width="1200" height="1500" loading="lazy" decoding="async">
+      <span class="about__photo-cap">Снимаю в <span data-cfg-city>Ваш город</span></span>
+    </div>
+
+    <div class="about__text">
+      <p class="eyebrow eyebrow--muted reveal">Обо мне</p>
+      <h2 class="section__title reveal" data-delay="1">
+        Почему со мной получается то,<br>что не получалось с другими?
+      </h2>
+
+      <p class="about__p reveal" data-delay="2">
+        Меня зовут <span data-cfg-name>Имя Фотограф</span>. Раньше я сам ненавидел фотографироваться,
+        пока не понял главную вещь: лучшие кадры делаются не тогда, когда человек замирает,
+        а когда он выдыхает.
+      </p>
+      <p class="about__p reveal" data-delay="3">
+        Я не учу вас «делать красиво». Я создаю условия — правильный свет, безопасное пространство,
+        спокойную музыку — в которых ваша зажатость уходит сама.
+      </p>
+      <p class="about__p reveal" data-delay="4">
+        Я не отдаю 500 одинаковых файлов. Я делаю жёсткую селекцию и оставляю только те
+        50–70 кадров, которые будут бить в самое сердце и через 20 лет.
+      </p>
+
+      <ul class="about__list reveal" data-delay="5">
+        <li>Съёмки любой сложности: одиночные, парные, семейные, беременность</li>
+        <li>Студия, ваш интерьер или выезд — решаю по ситуации</li>
+        <li>Помогу подобрать одежду, мудборд и музыку до съёмки</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================== ЦЕНЫ ============================== -->
+<section class="section section--prices" id="prices">
+  <div class="container">
+
+    <header class="section__head reveal">
+      <p class="eyebrow eyebrow--muted">Цены</p>
+      <h2 class="section__title">Прозрачно. Без скрытых доплат<br>за «душевность».</h2>
+      <p class="section__lead">
+        В стоимость каждой съёмки уже входит: консультация, помощь в подготовке, аренда базовой
+        студии (если нужна), полная ретушь отобранных вами кадров и передача через облачную
+        галерею, которая не снесёт ваши фото через месяц.
+      </p>
+    </header>
+
+    <!-- Таблица собирается тегами <table> из js/config.js: SITE.prices -->
+    <div class="prices-table-wrap reveal" data-delay="1">
+      <table class="prices" id="prices-table">
+        <caption class="prices__caption">Стоимость и что входит в каждую съёмку</caption>
+        <thead>
+          <tr>
+            <th scope="col">Съёмка</th>
+            <th scope="col">Длительность</th>
+            <th scope="col">Что входит</th>
+            <th scope="col">Стоимость</th>
+            <th scope="col"><span class="visually-hidden">Записаться</span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <noscript><p class="noscript">Напишите мне в мессенджере — расскажу о форматах и подберу подходящий.</p></noscript>
+    </div>
+
+    <p class="prices-note reveal" data-cfg-price-note>
+      Полная стоимость известна до начала съёмки. Продление — 1 500 ₽ за 30 минут.
+    </p>
+
+  </div>
+</section>
+
+<!-- ============================== ОТЗЫВЫ ============================== -->
+<section class="section section--reviews" id="reviews">
+  <div class="container">
+
+    <header class="section__head section__head--light reveal">
+      <p class="eyebrow">Отзывы</p>
+      <h2 class="section__title">Слова тех, кто больше не боится камеры</h2>
+    </header>
+
+    <div class="reviews" id="reviews-grid"></div>
+
+    <p class="reviews__note reveal">
+      Это реальные сообщения клиентов — без причёсанных формулировок.
+      Если хотите увидеть больше отзывов и переписок, напишите мне в мессенджер.
+    </p>
+  </div>
+</section>
+
+<!-- ============================== КОНТАКТЫ ============================== -->
+<section class="section section--contacts" id="contacts">
+  <div class="container contacts__inner">
+
+    <div class="contacts__text">
+      <p class="eyebrow eyebrow--muted reveal">Контакты</p>
+      <h2 class="section__title reveal" data-delay="1">Давайте сверим календари</h2>
+      <p class="section__lead reveal" data-delay="2">
+        Напишите мне в Telegram или WhatsApp. Это самый быстрый способ — там я отвечаю
+        голосовыми и сразу понимаю, что вам нужно.
+      </p>
+      <p class="contacts__sub reveal" data-delay="3">
+        Снимаю в <span data-cfg-city>Ваш город</span> и ближайших пригородах. Возможен выезд.
+      </p>
+    </div>
+
+    <div class="contacts__action reveal" data-delay="4">
+
+      <div class="slots" id="slots-note">
+        <span class="slots__dot" aria-hidden="true"></span>
+        <span data-cfg-slots>Осталось 2 окна на этот месяц</span>
+      </div>
+
+      <a class="btn btn--primary btn--xl" href="#" data-cfg-calendar data-modal="date" target="_blank" rel="noopener">
+        <span>Забронировать дату</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__arrow"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+
+      <p class="contacts__or">или напрямую:</p>
+
+      <div class="contacts__links">
+        <a class="btn btn--outline" href="#" data-cfg-telegram target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M21.9 4.3 18.9 19c-.2 1-.8 1.2-1.7.8l-4.6-3.4-2.2 2.1c-.2.3-.5.5-.9.5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2L6.7 13.2 2.2 11.7c-1-.3-1-1 .2-1.5l18-7c.8-.3 1.5.2 1.3 1.1z"/></svg>
+          <span>Написать в Telegram</span>
+        </a>
+        <a class="btn btn--outline" href="#" data-cfg-whatsapp target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.5 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.5-4-.1-.2-1-1.4-1-2.6 0-1.3.6-1.9.9-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.2.2.4.2.5.1l.7-.8c.2-.2.3-.2.6-.1l2 .9c.3.2.4.2.5.4 0 .1 0 .6-.2 1.1z"/></svg>
+          <span>Написать в WhatsApp</span>
+        </a>
+      </div>
+
+      <p class="contacts__micro">
+        Отвечаю в течение 2 часов. Никаких спам-рассылок и навязчивых звонков.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== ФОРМА ЗАЯВКИ ==============================
+     Открывается по кнопкам «Забронировать созвон» и «Забронировать дату».
+     Отправляет данные на адрес из js/config.js → form.endpoint                -->
+<dialog class="modal" id="lead-modal" aria-labelledby="lead-title">
+  <div class="modal__inner">
+
+    <button class="modal__close" type="button" data-close aria-label="Закрыть форму">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+
+    <!-- ---------- форма ---------- -->
+    <div class="modal__pane" id="lead-pane">
+      <p class="eyebrow" data-lead="eyebrow">Запись на съёмку</p>
+      <h2 class="modal__title" id="lead-title" data-lead="title">Забронировать созвон на 15 минут</h2>
+      <p class="modal__sub" data-lead="sub">
+        Оставьте имя и email — ссылку пришлю в течение 2 минут. Без спама и обязательств.
+      </p>
+
+      <form class="lead" id="lead-form" novalidate>
+
+        <div class="lead__row">
+          <div class="field">
+            <label class="field__label" for="lead-firstname">Имя</label>
+            <input class="field__input" id="lead-firstname" name="firstName" type="text"
+                   autocomplete="given-name" placeholder="Анна" required>
+            <span class="field__error" data-error-for="firstName"></span>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="lead-lastname">Фамилия</label>
+            <input class="field__input" id="lead-lastname" name="lastName" type="text"
+                   autocomplete="family-name" placeholder="Петрова" required>
+            <span class="field__error" data-error-for="lastName"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="lead-email">Email</label>
+          <input class="field__input" id="lead-email" name="email" type="email"
+                 autocomplete="email" inputmode="email" placeholder="anna@mail.ru" required>
+          <span class="field__error" data-error-for="email"></span>
+        </div>
+
+        <!-- ловушка для ботов: настоящий человек это поле не увидит -->
+        <div class="hp" aria-hidden="true">
+          <label>Не заполняйте это поле<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <label class="check">
+          <input type="checkbox" name="consent" value="yes" required>
+          <span data-consent>Согласен(на) на обработку персональных данных</span>
+        </label>
+        <span class="field__error" data-error-for="consent"></span>
+
+        <button class="btn btn--primary btn--xl lead__submit" type="submit" id="lead-submit">
+          <span data-lead="submit">Получить ссылку на созвон</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__arrow"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+
+        <p class="lead__status" id="lead-status" role="status" aria-live="polite"></p>
+        <p class="lead__micro" id="lead-micro">Никакого спама. Отписка в один клик.</p>
+      </form>
+    </div>
+
+    <!-- ---------- экран успеха ---------- -->
+    <div class="modal__pane modal__pane--success" id="lead-success" hidden>
+      <div class="success__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>
+      </div>
+      <h2 class="modal__title" data-success="title">Заявка отправлена</h2>
+      <p class="modal__sub" data-success="sub"></p>
+
+      <div class="success__actions" id="success-actions"></div>
+
+      <p class="lead__micro" id="success-fallback" hidden>
+        Если форма не отправилась — напишите мне в мессенджер, я отвечу в течение 2 часов.
+      </p>
+    </div>
+
+  </div>
+</dialog>
+
+<!-- ============================== ПОДВАЛ ============================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="footer__logo"><span data-cfg="name">Имя Фотограф</span></p>
+    <p class="footer__copy">
+      © <span id="year">2026</span> <span data-cfg="name">Имя Фотограф</span>.
+      Частные фотосъёмки в городе <span data-cfg-cityonly>Ваш город</span>.
+    </p>
+    <p class="footer__links">
+      <a href="#" data-cfg-telegram>Написать в Telegram</a>
+      <span aria-hidden="true">·</span>
+      <a href="#" data-cfg-whatsapp>Написать в WhatsApp</a>
+      <span aria-hidden="true">·</span>
+      <a href="#hero">Наверх</a>
+    </p>
+  </div>
+</footer>
+
+<!-- Кнопка «вверх» -->
+<a class="to-top" id="to-top" href="#hero" aria-label="Наверх">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</a>
+
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

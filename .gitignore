@@ -1,0 +1,16 @@
+# Служебные файлы Git
+.git/
+
+# Рабочие документы (не код сайта)
+*.doc
+*.docx
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Редакторы
+.vscode/
+.idea/
+*.swp
